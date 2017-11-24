@@ -1,0 +1,4 @@
+{ global:
+foo_AppClose;
+foo_AppMain;
+local: *; };

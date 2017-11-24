@@ -19,8 +19,8 @@ AM_PROG_CC_C_O
 
 AC_CONFIG_FILES([Makefile
                   common/Makefile
-	          			src/apps/Makefile
-	          			src/apps/test/Makefile
+	          src/apps/Makefile
+	          src/apps/test/Makefile
                   src/Makefile])
 AC_OUTPUT
 
