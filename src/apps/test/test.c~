@@ -1,21 +1,21 @@
-/*!     http://man7.org/linux/man-pages/man3/dlopen.3.html
- (C) Michael Kerrisk's example
-  The program below loads the (glibc) math library, looks up the
-      address of the cos(3) function, and prints the cosine of 2.0.  The
+/* This is Michael Kerrisk's example to test your dlopen in Linux without GNU 
+
+http://man7.org/linux/man-pages/man3/dlopen.3.html
+
+    The program below loads the (glibc) math library, looks up the
+       address of the cos(3) function, and prints the cosine of 2.0.  The
        following is an example of building and running the program:
 
-           $ cc test.c -ldl
+           $ cc dlopen_demo.c -ldl
            $ ./a.out
            -0.416147
 */
-
-       #include <stdio.h>
-       #include <stdlib.h>
-       #include <dlfcn.h>
-       #include <gnu/lib-names.h>  /* Defines LIBM_SO (which will be a
+#include <stdio.h>
+#include <stdlib.h>
+#include <dlfcn.h>
+#include <gnu/lib-names.h>  /* Defines LIBM_SO (which will be a
                                       string such as "libm.so.6") */
-       int
-       main(void)
+       int        main(void)
        {
            void *handle;
            double (*cosine)(double);

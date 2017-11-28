@@ -1,0 +1,7 @@
+SUBDIRS = common \
+	src
+
+ACLOCAL_AMFLAGS = -I m4
+
+
+	

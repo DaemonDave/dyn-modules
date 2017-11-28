@@ -3,28 +3,28 @@
 #include <unistd.h>
 #include <string.h>
 
+//! \var count - internal to this folder and this module
+static int count = 0;
 
-static int count  =0;
-
-int local_print( int b )
+//! \fn foo_print - prints with counter
+int foo_print( int b)
 {
-	count++;
-	printf( "%u  + %u = %u ", b, count, (b + count)   );
+	// local variable
+	int c=1;
+	count++;	
+	c = b + count;
+    	printf("%u + %u = %u \n", count, b, ( c ));
+	return count;
+}
 
-} 
-
-
+//! \fn foo_AppMain - dlopen / dlsym entry point for shared module dynamically opened by application.
 int foo_AppMain( int a )
 {
+	return	foo_print(a);
+}
 
-   local_print( a );
-
-	return a;
-} 
-
-int foo_AppClose(char * name)
+//! \fn foo_AppMain - dlopen / dlsym entry point for shared module dynamically opened by application.
+int foo_AppClose( int a )
 {
-
-   return count;
-
-} 
+	return	count;
+}

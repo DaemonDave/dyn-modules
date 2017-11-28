@@ -21,4 +21,5 @@ https://autotools.io/libtool/symbols.html
 
 If my 5 hours of work saves you one, please pass that time on. Hug your kids. 
 
-David Ryan Erickson
+David Ryan Erickson  @daemondave
+

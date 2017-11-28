@@ -289,6 +289,8 @@ target_alias =
 top_build_prefix = ../../
 top_builddir = ../..
 top_srcdir = ../..
+
+# notional starting folder level for many dynamic loadable modules
 SUBDIRS = test
 all: all-recursive
 

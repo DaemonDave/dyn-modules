@@ -1,0 +1,27 @@
+.
+├── apps
+│   ├── Makefile
+│   ├── Makefile.am
+│   ├── Makefile.am~
+│   ├── Makefile.in
+│   └── test
+│       ├── foo1.c
+│       ├── foo1.c~
+│       ├── libfoo.la
+│       ├── libfoo_la-foo1.lo
+│       ├── libfoo_la-foo1.o
+│       ├── Makefile
+│       ├── Makefile.am
+│       ├── Makefile.am~
+│       ├── Makefile.in
+│       ├── test.c
+│       └── test.c~
+├── dynamic
+├── dynamic-main.o
+├── main.c
+├── Makefile
+├── Makefile.am
+├── Makefile.in
+└── tree.out
+
+2 directories, 22 files
